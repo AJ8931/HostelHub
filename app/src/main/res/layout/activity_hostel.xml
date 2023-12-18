@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Hostel"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:text="Hostle Dashboard" />
+    <Button
+        android:id="@+id/ownDtlBtn"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/rounded_button_background"
+        android:layout_marginBottom="10dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:text="Owner Details"/>
+    <Button
+        android:id="@+id/AddLisBtn"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/rounded_button_background"
+        android:layout_marginBottom="10dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:text="Add Listings"/>
+    <Button
+        android:id="@+id/UptDtlBtn"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/rounded_button_background"
+        android:layout_marginBottom="10dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:text="Update Listings"/>
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome Hostel HUB"
+        android:layout_margin="20dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+    <Button
+        android:text="@string/userD"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:id="@+id/Usernav"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/rounded_button_background"
+        android:layout_marginBottom="10dp"/>
+    <Button
+        android:text="@string/hostel"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:id="@+id/HostleNav"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/rounded_button_background"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_details"
+        />
+    <Button
+        android:id="@+id/LogoutBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

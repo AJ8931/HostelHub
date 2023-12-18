@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".HostelOwnerForm">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Owner Details"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="40dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/username"
+            android:padding="6dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/HostleName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/hostle_name"
+            android:textSize="18dp"
+            android:padding="6dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Location"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/location"
+            android:padding="6dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Cotact_Number"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Contact No"
+            android:padding="6dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:id="@+id/amenitiesLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkBoxWiFi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WiFi"
+                android:padding="10dp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxParking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Parking"
+                android:padding="10dp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxLaundry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laundry"
+                android:padding="10dp" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Single"
+            android:textSize="16sp"
+            android:paddingEnd="8dp" />
+
+        <EditText
+            android:id="@+id/editTextSingleRooms"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:hint="Number of Rooms"
+            android:inputType="number"
+            android:imeOptions="actionNext"
+            android:layout_marginEnd="8dp" />
+
+        <EditText
+            android:id="@+id/editTextSinglePrice"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:hint="Price"
+            android:inputType="numberDecimal"
+            android:imeOptions="actionDone" />
+
+    </LinearLayout>
+
+    <!-- Double Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Double"
+            android:textSize="16sp"
+            android:paddingEnd="8dp" />
+
+        <EditText
+            android:id="@+id/editTextDoubleRooms"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:hint="Number of Rooms"
+            android:inputType="number"
+            android:imeOptions="actionNext"
+            android:layout_marginEnd="8dp" />
+
+        <EditText
+            android:id="@+id/editTextDoublePrice"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:hint="Price"
+            android:inputType="numberDecimal"
+            android:imeOptions="actionDone" />
+
+    </LinearLayout>
+
+    <!-- Shared Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shared"
+            android:textSize="16sp"
+            android:paddingEnd="8dp" />
+
+        <EditText
+            android:id="@+id/editTextSharedRooms"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:hint="Number of Rooms"
+            android:inputType="number"
+            android:imeOptions="actionNext"
+            android:layout_marginEnd="8dp" />
+
+        <EditText
+            android:id="@+id/editTextSharedPrice"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:hint="Price"
+            android:inputType="numberDecimal"
+            android:imeOptions="actionDone" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Room Picture"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:id="@+id/imageViewRoom"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/common_full_open_on_phone"
+            android:contentDescription="Room Picture"
+            android:scaleType="centerCrop" />
+
+        <Button
+            android:id="@+id/buttonChooseImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Image"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:background="@drawable/rounded_button_background" />
+
+        <Button
+            android:id="@+id/buttonUploadImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Image"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:background="@drawable/rounded_button_background" />
+
+    </LinearLayout>
+        <Button
+            android:id="@+id/SubmitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:background="@drawable/rounded_button_background"
+            android:text="Submit"/>
+
+    </LinearLayout>
+</ScrollView>
