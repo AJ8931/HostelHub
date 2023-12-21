@@ -41,7 +41,11 @@ dependencies {
     implementation("com.google.firebase:firebase-database")
 
     // Add the dependencies for the Firebase Authentication and Realtime Database libraries
-    implementation ("com.google.firebase:firebase-auth");
+    implementation ("com.google.firebase:firebase-auth")
+
+    implementation ("com.github.bumptech.glide:glide:4.16.0") // Use the latest version
+    annotationProcessor ("com.github.bumptech.glide:compiler:4.16.0") // Use the same version
+
 
     implementation ("androidx.appcompat:appcompat:1.6.1");
     implementation ("com.google.android.material:material:1.10.0");

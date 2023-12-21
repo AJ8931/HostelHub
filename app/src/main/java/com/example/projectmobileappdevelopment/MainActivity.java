@@ -8,9 +8,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.google.firebase.Firebase;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+
+import user_dash_board.BottomNavigationBar;
+import user_dash_board.UserDashboard;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -59,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         UserNav.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent =  new Intent(getApplicationContext(),UserDashboard.class);
+                Intent intent =  new Intent(getApplicationContext(), BottomNavigationBar.class);
                 startActivity(intent);
                 finish();
             }
